@@ -1,6 +1,6 @@
 function countdown(){
-const newYear=new Date(2023,1,1,0,0,0);
 const today=new Date();
+const newYear=new Date(today.getFullYear()+1,1,1,0,0,0);
 const remainingSec=newYear-today;
 const s=Math.floor(remainingSec/1000%60);
 const m=Math.floor(remainingSec/(60*1000)%60);
